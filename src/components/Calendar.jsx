@@ -72,8 +72,7 @@ class Calendar extends React.Component {
             key={day}
             onClick={() => this.onDateClick(dateFns.parse(cloneDay))}
           >
-            <span className="number">{formattedDate}</span>
-            <span className="bg">{formattedDate}</span>
+            <span className="bg number">{formattedDate}</span>
           </div>
         );
         day = dateFns.addDays(day, 1);
